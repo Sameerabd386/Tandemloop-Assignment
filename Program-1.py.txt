@@ -1,0 +1,32 @@
+class Calculator:
+    def __init__(self, a, b, operation):
+        self.a = a 
+        self.b = b 
+        self.operation = operation.lower()
+        
+    def calculate(self):
+        if self.operation == "add" or self.operation == "+":
+            return self.a + self.b 
+            
+        elif self.operation == "subtract" or self.operation == "-":
+            return self.a - self.b 
+            
+        elif self.operation == "multiply" or self.operation == "*":
+            return self.a * self.b 
+            
+        elif self.operation == "divide" or self.operation == "/":
+            if b == 0:
+                return "Division error"
+            else:
+                return self.a / self.b
+                
+        else:
+            return "invalid operation"
+            
+a = float(input("Enter a first number : "))
+b = float(input("Enter the second number: "))
+op = input("Enter a operation (+/-/*///add/subtract/multiply/divide) : ")
+
+calc = Calculator(a, b, op)
+result = calc.calculate()
+print("result", result)
