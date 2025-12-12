@@ -1,0 +1,7 @@
+a = int(input("Enter a number: "))   #Takes a int as an input
+
+result = []                  # list to store all the odd numbers
+for i in range(1, a + 1):
+    result.append(2*i-1)                  #converts numbers to odd by being in range with the help of for loop
+    
+print("Output: ", ", ".join(map(str, result)))                 #converted back to normal using join function by map 
